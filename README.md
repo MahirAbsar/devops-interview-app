@@ -17,6 +17,13 @@ npm install
 - Create a Database in postgres titled **"counterdb"**  
 postgres and pgadmin was used in this project
 
+- go to "server" folder
+- create a file named ".env"
+- in the .env file, store the variable mentioned below
+```
+DATABASE_URL="postgresql://POSTGRES_USERNAME:POSTGRES_PASSWORD@localhost:5432/counterdb?schema=public"
+
+```
 
 - Run Migrations
 
@@ -32,7 +39,7 @@ node ./app.js
 ```
 
 - Start React Server
-- - First go to "client" folder and run
+- First go to "client" folder and run
 
 ```javascript
 npm start
